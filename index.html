@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fff1f6">
+<title>Selamat Ulang Tahun Cyntia</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="page on" id="p0" data-t="Awal">
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="beams" aria-hidden="true"></div>
+  <div class="crest" id="mono"></div>
+  <h1>Selamat Ulang Tahun</h1>
+  <div class="name" id="nama"></div>
+  <p>Ada sesuatu yang aku buat khusus untuk Cyntia.</p>
+  <div class="band" id="band" aria-hidden="true"></div>
+  <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+  <button class="btn" id="open">Buka Kejutan</button>
+</section>
+
+<section class="page" data-t="Intro"><div class="wrap">
+  <div class="gold-line"></div>
+  <div class="age" id="age">0</div>
+  <h2>tahun yang indah</h2>
+  <p class="sub" id="ageText"></p>
+</div></section>
+
+<section class="page" data-t="Tour"><div class="wrap">
+  <h2>Tour Kita</h2>
+  <p class="sub">Beberapa momen yang paling aku ingat, satu per satu.</p>
+  <div id="tl"></div>
+</div></section>
+
+<section class="page" data-t="Hits"><div class="wrap">
+  <h2>Alasan Aku Sayang Kamu</h2>
+  <p class="sub">Ketuk setiap kartu woi ndut buat membaca alasannya.</p>
+  <div class="cards" id="cards"></div>
+</div></section>
+
+<section class="page" data-t="Backstage"><div class="wrap">
+  <h2>Backstage Kita</h2>
+  <p class="sub">Kumpulan foto yang ngebuat aku tersenyum.</p>
+  <div class="gal" id="galeri"></div>
+</div></section>
+
+<section class="page" data-t="Lagu"><div class="wrap">
+  <h2>Setlist Kita</h2>
+  <p class="sub">Lagu-lagu yang selalu Ngingetin aku pada kamu. Ketuk satu lagu untuk memutarnya.</p>
+  <div class="disc" id="disc"></div>
+  <div class="np" id="np" aria-live="polite">Pilih lagu dari daftar</div>
+  <div id="lagu"></div>
+</div></section>
+
+<section class="page" data-t="Kuis"><div class="wrap">
+  <h2>Kuis Kecil</h2>
+  <p class="sub">Seberapa baik kamu mengenal aku? Jawab satu per satu.</p>
+  <div id="quiz"></div>
+</div></section>
+
+<section class="page" data-t="Janji"><div class="wrap">
+  <h2>Janjiku Untukmu</h2>
+  <p class="sub">Hal-hal yang ingin kulakukan, bukan hanya hari ini.</p>
+  <div id="janji"></div>
+</div></section>
+
+<section class="page" data-t="Surat"><div class="wrap">
+  <h2>Surat Untukmu</h2>
+  <p class="sub">Dari aku, untukmu.</p>
+  <div class="letter"><p id="typed" aria-live="polite"></p><div class="sign" id="sign"></div></div>
+</div></section>
+
+<section class="page" data-t="Lilin"><div class="wrap">
+  <h2>Tiup Lilinnya</h2>
+  <p class="sub">Pejamkan mata, buat satu permintaan, lalu tiup.</p>
+  <svg id="cake" viewBox="0 0 200 190" aria-hidden="true">
+    <ellipse cx="100" cy="172" rx="92" ry="10" class="body"/>
+    <rect x="30" y="115" width="140" height="55" rx="6" class="body"/>
+    <rect x="55" y="80" width="90" height="35" rx="6" class="body"/>
+    <path d="M30 135q12 10 23 0t23 0 23 0 23 0 23 0 23 0" fill="none" stroke="#d9b873" stroke-width="1.2"/>
+    <g class="wick"><path d="M80 80V54M100 80V50M120 80V54"/></g>
+    <ellipse class="flame" cx="80" cy="46" rx="5" ry="9"/><ellipse class="flame" cx="100" cy="42" rx="5" ry="9"/><ellipse class="flame" cx="120" cy="46" rx="5" ry="9"/>
+  </svg>
+  <button class="btn" id="blow">Tiup Lilin</button>
+  <p class="sub" id="wish" hidden></p>
+</div></section>
+
+<section class="page" data-t="Bonus"><div class="wrap">
+  <h2>Bonus Track</h2>
+  <p class="sub">Ada kejutan kecil yang menunggumu.</p>
+  <div style="max-width:200px;margin:0 auto 28px" id="giftPic"></div>
+  <button class="btn" id="giftBtn">Buka Hadiah</button>
+  <div class="letter" id="giftBox" hidden><h3 id="giftT" style="font-size:2rem;color:var(--gold2)"></h3><p id="giftP" style="margin:10px 0 0"></p></div>
+</div></section>
+
+<section class="page" data-t="Encore"><div class="wrap" style="padding-top:18vh">
+  <div class="gold-line"></div>
+  <h2>Selamat Ulang Tahun</h2>
+  <div class="name" id="nama2"></div>
+  <p class="sub" id="closing" style="margin-top:24px"></p>yn
+</div></section>
+
+<div id="fx" aria-hidden="true"></div>
+<button id="mus" type="button" aria-label="Putar atau hentikan musik"></button>
+<nav id="nav" aria-label="Bagian"></nav>
+
+<script src="script.js"></script>
+</body>
+</html>
